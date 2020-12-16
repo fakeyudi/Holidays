@@ -18,6 +18,7 @@
 		AF039AB8258A2F5F009472E3 /* HolidaysDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF039AB7258A2F5F009472E3 /* HolidaysDataModel.swift */; };
 		AF039ABD258A308D009472E3 /* HolidayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF039ABC258A308D009472E3 /* HolidayRequest.swift */; };
 		AF039AC2258A42DA009472E3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF039AC1258A42DA009472E3 /* CollectionViewCell.swift */; };
+		AF039AC7258A6C2B009472E3 /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF039AC6258A6C2B009472E3 /* detailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		AF039AB7258A2F5F009472E3 /* HolidaysDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysDataModel.swift; sourceTree = "<group>"; };
 		AF039ABC258A308D009472E3 /* HolidayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayRequest.swift; sourceTree = "<group>"; };
 		AF039AC1258A42DA009472E3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		AF039AC6258A6C2B009472E3 /* detailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				AF039A86258A2E83009472E3 /* SceneDelegate.swift */,
 				AF039A88258A2E83009472E3 /* ViewController.swift */,
 				AF039A8A258A2E83009472E3 /* Main.storyboard */,
+				AF039AC6258A6C2B009472E3 /* detailsViewController.swift */,
 				AF039AC1258A42DA009472E3 /* CollectionViewCell.swift */,
 				AF039AB7258A2F5F009472E3 /* HolidaysDataModel.swift */,
 				AF039ABC258A308D009472E3 /* HolidayRequest.swift */,
@@ -269,6 +272,7 @@
 			files = (
 				AF039A89258A2E83009472E3 /* ViewController.swift in Sources */,
 				AF039ABD258A308D009472E3 /* HolidayRequest.swift in Sources */,
+				AF039AC7258A6C2B009472E3 /* detailsViewController.swift in Sources */,
 				AF039AC2258A42DA009472E3 /* CollectionViewCell.swift in Sources */,
 				AF039A85258A2E83009472E3 /* AppDelegate.swift in Sources */,
 				AF039AB8258A2F5F009472E3 /* HolidaysDataModel.swift in Sources */,

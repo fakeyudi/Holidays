@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var holidayName: String?
+    var holidayDescription: String?
     
     var listOfHolidays = [HolidayDetail]() {
         didSet{
@@ -28,6 +30,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "details"{
+            let vc = segue.destination as! detailsViewController
+            vc.name = holidayName
+            vc.details = holidayDescription
+        }
     }
 
 
@@ -50,6 +60,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 165, height: 165)
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        holidayName = listOfHolidays[indexPath.row].name
+        holidayDescription = listOfHolidays[indexPath.row].description
+        self.performSegue(withIdentifier: "details", sender: self)
     }
     
 }
